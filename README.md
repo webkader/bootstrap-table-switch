@@ -56,5 +56,5 @@ Have a bug or a feature request? If your problem or idea is not addressed yet, [
 
 ## License
 
-**NOTE:** Bootstrap Table is licensed under the The [MIT License](https://github.com/webkader/bootstrap-table-switch/blob/master/LICENSE). Completely free, you can arbitrarily use and modify this plugin. If this plugin is useful to you, you can Star this repo, your support is my biggest motive force, thanks.
+**NOTE:** Bootstrap Table Switch is licensed under the The [MIT License](https://github.com/webkader/bootstrap-table-switch/blob/master/LICENSE). Completely free, you can arbitrarily use and modify this plugin. If this plugin is useful to you, you can Star this repo, your support is my biggest motive force, thanks.
 
