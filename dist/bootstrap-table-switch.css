@@ -3,76 +3,95 @@
  * Copyright 2015 Baris Aydin
  * Licensed under MIT (https://github.com/webkader/bootstrap-table-switch/blob/master/LICENSE)
  * ======================================================================== */
+
 .bs-table-switch {
     background-color: #fff;
     border: 1px solid #dfdfdf;
+		overflow: hidden;
     line-height: 26px;
     min-width: 80px;
     padding: 2px;
-		display: inline-block;
-		direction: ltr;
-		cursor: pointer;
-		position: relative;
-		text-align: center;
+    display: inline-block;
+    direction: ltr;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
     font-size: 12px;
     text-transform: uppercase;
-		z-index: 98;
+    z-index: 98;
     *zoom: 1;
-		
-		border-radius: 4px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-		background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
-		
-		-webkit-transition: background-color 0.3s;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
-		transition: background-color 0.3s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    border-radius: 4px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
+    
+    -webkit-transition: background-color 0.3s;
+    /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    
+    transition: background-color 0.3s;
+    /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 }
 .bs-table-switch .switch-container {
     position: relative;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .bs-table-switch input[type='radio'],
 .bs-table-switch input[type='checkbox'] {
-		position: absolute !important;
-		top: 0;
-		left: 0;
-		margin: 0;
-		z-index: -1;
-		opacity: 0;
-		filter: alpha(opacity=0);
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: -1;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 .bs-table-switch .switch-slider {
     background-color: #fff;
-		width: 50%;
+    width: 50%;
     height: 26px;
     left: 0;
     position: absolute;
     top: 0;
     z-index: 99;
-		
-		border-radius: 4px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-		background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
-		
-		-webkit-box-shadow: 0px 0px 2px 1px #dfdfdf; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-		box-shadow: 0px 0px 2px 1px #dfdfdf; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-		
-		-webkit-transform: translateX(0%);  /* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: translateX(0%);  /* IE 9 */
-		transform: translateX(0%);  /* Firefox 16+, IE 10+, Opera */
-		
-		-webkit-transition: -webkit-transform 0.3s;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
-		transition: transform 0.3s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    border-radius: 4px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
+    
+    -webkit-box-shadow: 0px 0px 2px 1px #dfdfdf;
+    /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    
+    box-shadow: 0px 0px 2px 1px #dfdfdf;
+    /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+    
+    -webkit-transform: translateX(0%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    
+    -ms-transform: translateX(0%);
+    /* IE 9 */
+    
+    transform: translateX(0%);
+    /* Firefox 16+, IE 10+, Opera */
+    
+    -webkit-transition: -webkit-transform 0.3s;
+    /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    
+    transition: transform 0.3s;
+    /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 }
 .bs-table-switch .switch-label {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		
-		float: left;
-		display: inline-block !important;
-		width: 50%;
-		height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block !important;
+    width: 50%;
+    height: 100%;
     white-space: nowrap;
 }
 .bs-table-switch .onText {
@@ -84,19 +103,25 @@
     float: right;
 }
 .bs-table-switch.is-disabled {
-		opacity: 0.5;
-		filter: alpha(opacity=50);
-		cursor: not-allowed !important;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: not-allowed !important;
 }
 .bs-table-switch.is-active {
-    background-color: #428bca; /* Bootstrap Primary Color */
+    background-color: #428bca;
+    /* Bootstrap Primary Color */
+    
     border-color: #428bca;
 }
 .bs-table-switch.is-active .switch-slider {
     -webkit-box-shadow: none;
     box-shadow: none;
-		
-		-webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: translateX(100%);  /* IE 9 */
-		transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    
+    -ms-transform: translateX(100%);
+    /* IE 9 */
+    
+    transform: translateX(100%);
+    /* Firefox 16+, IE 10+, Opera */
 }
